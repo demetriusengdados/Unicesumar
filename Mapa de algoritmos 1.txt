@@ -1,0 +1,41 @@
+Inicio
+
+  Repita
+
+    escreva("Insira a porcentagem de ativos em CDB's: ")
+    leia(cdbs) // porcentagem
+    escreva ("Quanto tem aplicado já neste ativo: ")
+    leia(vcdbs)// valor em dinheiro
+
+    escreva("Insira a porcentagem de ativos em ações: ")
+    leia(acoes)
+    escreva("Quanto já tem aplicado neste ativo: ")
+    leia(vacoes)
+
+    escreva("Insira a porcentagem de ativos em Fundos Imobiliários: ")
+    leia(fundosimob)
+    escreva("Quanto já tem aplicado neste ativo: ")
+    leia(vfundosimob)
+
+    escreva("Insira a porcentagem de ativos em Stocks: ")
+    leia(stocks)
+    escreva("Quanto já tem aplicado neste ativo: ")
+    leia(vstocks)
+
+    escreva("Insira a porcentagem de ativos em Reits: ")
+    leia(reits)
+    escreva("Quanto já tem aplicado neste ativo: ")
+    leia(vreits)
+
+    total <- cdbs + acoes + fundosimob + stocks + reits
+
+  se (total <> 100) entao:
+    escreva1  ("Erro, deve-se somar 100%! Digite Novamente os valores")
+  senão:
+    escreva1("Sucesso, os dados foram armazenados")
+  fimse
+
+  ate (total = 100)
+
+
+  algoritmo

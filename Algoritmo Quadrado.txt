@@ -1,0 +1,16 @@
+Algortimo quadrado
+
+Var
+  L, A, P: real
+
+Inicio
+  Escreva("Informe o valor do lado do quadrado: ")
+  Leia(L)
+
+  A <- L * L
+  p <- 4 * L
+
+  Escreva("O perímetro é: ", P)
+  Escreva("A área é: ", A)
+
+Fim

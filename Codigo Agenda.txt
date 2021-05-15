@@ -1,0 +1,37 @@
+Algoritmo problema1
+  Var:
+    idade        : inteiro
+    peso, altura : real
+    nome         : vetor [1..50] de caractere
+    telefone     : vetor [1..15] de caractere
+
+  Inicio
+      Escreva("Informe o nome: ")
+      Leia(nome)
+
+      Escreva("Informe a Idade: ")
+      leia(idade)
+
+      Escreva("Informe o peso: ")
+      leia(peso)
+
+      Escreva("Informe a altura: ")
+      leia(altura)
+
+      Escreva("Informe o telefone: ")
+      leia(telefone)
+
+      // Como não há processamento, realizaremos a saída dos dados por meio do
+      // comando Escreva:
+
+      Escreva("O nome é: ", nome)
+
+      Escreva("A idade é; ", idade)
+
+      Escreva("O peso é: ", peso)
+
+      Escreva("A altura é: ", altura)
+
+      Escreva("O telefone é: ", telefone)
+
+  Fim

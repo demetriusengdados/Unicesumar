@@ -1,0 +1,12 @@
+Algoritmo exemplo
+
+Var
+
+    A : inteiro
+
+Inicio
+    Leia(A)
+    Se (A > 10) então
+      Escreva("A é maior que 10")
+    Fim_se
+Fim

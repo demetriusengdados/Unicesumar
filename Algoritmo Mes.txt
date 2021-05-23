@@ -1,0 +1,27 @@
+Algoritmo mes
+
+Var
+
+    num: inteiro
+
+Inicio
+    Escreva("Digite um número de 1 a 12: ")
+    Leia(num)
+    Caso (num):
+        Seja 1 faça Escreva("Janeiro")
+        Seja 2 faça Escreva("Fevereiro")
+        Seja 3 faça Escreva("Março")
+        Seja 4 faça Escreva("Abril")
+        Seja 5 faça Escreva("Maio")
+        Seja 6 faça Escreva("Junho")
+        Seja 7 faça Escreva("Julho")
+        Seja 8 faça Escreva("Agosto")
+        Seja 9 faça Escreva("Setembro")
+        Seja 10 faça Escreva("Outubro")
+        Seja 11 faça Escreva("Novembro")
+        Seja 12 faça Escreva("Dezembro")
+        Senão Escreva("Mês inválido")
+
+    Fim_caso
+
+Fim

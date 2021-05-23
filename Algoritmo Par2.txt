@@ -1,0 +1,13 @@
+Algoritmo par2
+
+Var
+
+    n: inteiro
+
+Inicio
+    Escreva("Digite um número: ")
+    Leia(n)
+    Se (n MOD 2 = 0) então:
+      Escreva("A metade do número é: ", n/2)
+    Fim_se
+Fim

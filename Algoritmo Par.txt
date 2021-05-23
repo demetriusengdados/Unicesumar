@@ -1,0 +1,16 @@
+Algoritmo par
+
+Var
+
+    n, resto, metade: inteiro
+
+Inicio
+    Escreva("Digite um número: ")
+    Leia(n)
+    resto <- n MOD 2
+    Se (resto = 0) então
+        metade <- n / 2
+        Escreva("A metade do número é: ", metade)
+    Fim_se
+
+Fim

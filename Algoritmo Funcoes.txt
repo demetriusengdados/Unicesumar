@@ -1,0 +1,16 @@
+Algoritmo funcoes
+
+Var
+
+    raiz : real
+    num, quadrado: inteiro
+
+Inicio
+    Escreva("Informe um número inteiro: ")
+    Leia(num)
+    raiz <- sqrt(num)
+    quadrado <- sqr(num)
+    Escreva("A raiz quadrada é: ", raiz)
+    Escreva("O número elevado ao quadrado é : ", quadrado)
+
+Fim

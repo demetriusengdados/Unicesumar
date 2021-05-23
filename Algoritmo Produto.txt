@@ -1,0 +1,18 @@
+Algoritmo Produto
+
+Var
+    preco, pdesconto, vdesconto, vpagar : real
+
+Inicio
+    Escreva("Informe o preço do produto: ")
+    leia(preco)
+    Escreva("Informe o percentual do desconto: ")
+    leia(pdesconto)
+
+    vdesconto <- (preco * pdesconto) / 100
+    vpagar <- preco - vdesconto
+
+    Escreva("O valor do desconto é: ", vpagar)
+    Escreva("O valor do desconto é: ", vdesconto)
+
+Fim

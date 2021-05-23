@@ -1,0 +1,17 @@
+Algoritmo triangulo
+
+Var
+
+    base, altura, area : real
+
+Inicio
+
+    Escreva("Informe a base do triangulo: ")
+    Leia(base)
+    Escreva("Informe a altura do triangulo: ")
+    leia(altura)
+    area <- (base * altura) / 2
+
+    Escreva("A area do triangulo é : ", area)
+
+Fim

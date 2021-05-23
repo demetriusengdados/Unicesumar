@@ -1,0 +1,20 @@
+Algoritmo faturamento
+
+Var
+
+  valor, fmensal, fanual : real
+  qtdade: inteiro
+
+Inicio
+
+    Escreva("Informe a quantidade de carros: ")
+    leia(qtdade)
+    Escreva("Informe o valor da locação: ")
+    leia(valor)
+    fmensal <- qtdade * valor
+    fanual <- ((qtdade * 0,8) * valor)*12
+    Escreva("O faturamento mensal é de: ",fmensal)
+    Escreva("O faturamento anual considerando a locação
+    de 80% dos carros é: ", fanual)
+
+Fim

@@ -1,0 +1,16 @@
+Algoritmo parimpar
+
+Var
+
+    n: inteiro
+
+Inicio
+    Escreva("Digite um número: ")
+    Leia(n)
+    Se (n MOD 2 = 0) então:
+      Escreva("O número é par")
+    Senão
+      Escreva("O número é impar")
+    Fim_se
+
+Fim

@@ -1,0 +1,51 @@
+Algoritmo reajuste
+
+Var
+
+    cargo: inteiro
+    salario, reajuste, aumento: real
+
+Inicio
+    Escreva("Digite o cargo: ")
+    Leia(cargo)
+    Escreva("Digite o salário: ")
+    Leia(salario)
+    Se (cargo = 1) então:
+      Escreva("Serviços Gerais")
+      aumento <- salario * (50/100)
+      reajuste <- salario + aumento
+
+      Escreva("O aumento é de: ", aumento)
+      Escreva("O novo salário é: ", reajuste)
+
+    Senão:
+      Se (cargo = 2) então:
+        Escreva("Vigia")
+        aumento <- salario * (30/100)
+        reajuste <- salario + aumento
+        Escreva("O aumento é de: ", aumento)
+        Escreva("O novo salário é de: ", reajuste)
+      Senão:
+
+        Se (cargo = 3) então:
+          Escreva("Recepcionista")
+          aumento <- salario * (25/100)
+          reajuste <- salario + aumento
+          Escreva("O aumento é de: ", aumento)
+          Escreva("O novo salário é de: ", reajuste)
+        Senão:
+          Se (cargo = 4) então:
+            Escreva("Vendedor")
+            aumento <- salario * (15/100)
+            reajuste <- salario + aumento
+            Escreva("O aumento é de: ", aumento)
+            Escreva("O novo salário é de: ", reajuste)
+
+          Fim_se
+
+        Fim_se
+
+      Fim_se
+
+    Fim_se
+Fim

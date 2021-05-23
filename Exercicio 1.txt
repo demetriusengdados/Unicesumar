@@ -1,0 +1,36 @@
+Algoritmo exe5a
+
+Var
+
+  A, B, C: inteiro
+
+Inicio
+  A <- 5
+  B <- 30
+  C <- A
+  B <- C
+  A <- B
+
+  Escreva(A)
+  Escreva(B)
+  Escreva(C)
+
+Fim
+
+Algoritmo exe5b
+
+Var
+
+  A, B, C: inteiro
+
+Inicio
+  A <- 5
+  B <- 30
+  C <- A
+  A <- B
+  B <- C
+  Escreva(A)
+  Escreva(B)
+  Escreva(C)
+
+Fim

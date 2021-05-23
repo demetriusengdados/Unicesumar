@@ -1,0 +1,34 @@
+Algoritmo maior
+
+Var
+
+  a, b, c, max: inteiro
+
+Inicio
+
+    Escreva("Digite o primeiro número inteiro: ")
+    Leia(a)
+    Escreva("Digite o segundo número inteiro: ")
+    Leia(b)
+    Escreva("Digite o terceiro número inteiro: ")
+    leia(c)
+
+    Se (a > b) então:
+      Se (a > c) então:
+        max <- a
+
+      Senão
+        max <- c
+      Fim_se
+
+    Senão
+      Se (b > c) então:
+        max <- b
+      Senão
+        max <- c
+      Fim_se
+    Fim_se
+
+    Escreva("O maior número é: ", max)
+
+Fim

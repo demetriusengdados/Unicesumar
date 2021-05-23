@@ -1,0 +1,60 @@
+Algoritmo mes2
+Var
+  num: inteiro
+Início
+  Leia(num)
+  Se (num = 1) então:
+    Escreva(“Janeiro”)
+  Fim_se
+
+  Se (num = 2) então:
+      Escreva(“Fevereiro”)
+  Fim_se
+
+  Se (num = 3) então:
+      Escreva("Março")
+
+  Se (num = 4) então:
+      Escreva(“Abril”)
+Fim_se
+  Se (num = 5) então:
+      Escreva(“Maio”)
+Fim_se
+
+Se (num = 6) então:
+    Escreva(“Junho”)
+Fim_se
+
+Se (num = 7) então:
+    Escreva(“Julho”)
+Fim_se
+
+Se (num = 8) então:
+    Escreva(“Agosto”)
+Fim_se
+
+Se (num = 9) então:
+    Escreva(“Setembro”)
+Fim_se
+
+Se (num = 10) então:
+    Escreva(“Outubro”)
+Fim_se
+
+Se (num = 11) então:
+    Escreva(“Novembro”)
+Fim_se
+
+Se (num = 12) então:
+    Escreva(“Dezembro”)
+Fim_se
+
+Se (num <> 1) E (num <> 2) E (num <> 3) E
+  4) E(num <>(num <> 5) E (num <> 6) E (num <> 7) E (num <>8) E
+  (num <> 9) E (num <> 10) E (num <> 11) E
+  (num <> 12)
+  então:
+    Escreva(“Mês inválido”)
+  Fim_se
+
+Fim

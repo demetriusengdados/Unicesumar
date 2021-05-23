@@ -1,31 +1,21 @@
 Algoritmo salario
 
 Var
-    htrabalhadas, hextra, vhora, sbruto, inss : real
-    fgts, sliquido : real
 
-Const
-    phoraextra = 100
+  vhora, naulas, pdesconto, sliquido, sbruto : real
 
 Inicio
-    Escreva("Informe o número de horas trabalhadas: ")
-    Leia(htrabalhadas)
-
-    Escreva("Informe o número de horas extras: ")
-    leia(hextra)
-
-    Escreva("Informe o valor da hora: ")
+    Escreva("Informe o valor da hora-aula: ")
     Leia(vhora)
+    Escreva("Informe o número de horas-aula dadas no mês: ")
+    Leia(naulas)
+    Escreva("Informe o percentual de desconto do INSS: ")
+    Leia(pdesconto)
 
-    sbruto <- (htrabalhadas + extra * (1 +(phoraextra/100))) * vhora
+    sbruto <- vhora * naulas
+    sliquido <- sbruto - (sbruto * pdesconto) / 100
 
-    inss <- sbruto * (9/100)
-    FGTS <- sbruto * (8/100)
-    sliquido <- sbruto - inss
-
-    Escreva("O salario bruto é: ", sbruto)
-    Escreva("O salario liquido é: ", sliquido)
-    Escreva("O inss é: ", inss)
-    Escreva("O FGTS é: ", FGTS)
+    Escreva("O valor do salário bruto é: ", sbruto)
+    Escreva("O valor do salário liquido é: ", sliquido)
 
 Fim

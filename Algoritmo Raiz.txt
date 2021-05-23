@@ -1,0 +1,45 @@
+Algoritmo raiz
+
+Var
+
+    a, b, c, delta, x1, x2: real
+
+Inicio
+
+  Escreva("Digite o valor de a: ")
+  Leia(a)
+
+  Escreva("Digite o valor de b: ")
+  Leia(b)
+
+  Escreva("Digite o valor de c: ")
+  Leia(c)
+
+  Se (a = 0) então:
+    Escreva("Não é uma equação de segundo grau")
+  Senão:
+    delta <- sqr(b) - 4 * a * c
+    Se (delta < 0) então:
+      Escreva("Não existe raiz real")
+    Senão:
+      Se (delta = 0) então:
+        Escreva("Existe uma raiz real")
+        x1 <- (-b) / (2 * a)
+        Escreva("A raiz é: ", x1)
+      Senão:
+        Se (delta > 0) então:
+          Escreva("Existem duas raízes reais")
+          x1 <- (-b + sqrt(delta)) / (2 * a)
+          Escreva("A raiz x1 é: ", x1)
+          x2 <- (-b - sqrt(delta)) / (2 * a)
+          Escreva("A raiz x2 é: ", x2)
+
+        Fim_se
+
+      Fim_se
+
+    Fim_se
+
+  Fim_se
+
+Fim

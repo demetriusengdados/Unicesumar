@@ -1,0 +1,25 @@
+Algoritmo Ordena
+
+Var
+
+  num: Vetor[1..5] de inteiro
+  i, j, aux: inteiro
+
+Inicio
+    Para i de 1 até 5 passo 1 faça:
+      Escreva("Informe um número: ")
+      Leia(num[i])
+    Fim_para
+    Para de i de 1 até 4 passo 1 faça:
+      Para j de i+1 até 5 faça:
+        Se(num[i] > num[j]) então:
+          aux <- num[i]
+          num[i] <- num[j]
+          num[j] <- aux
+        Fim_se
+      Fim_para
+    Fim_para
+    Para i de 1 até 5 passo 1 faça
+      Escreva(num[i])
+    Fim_para
+Fim

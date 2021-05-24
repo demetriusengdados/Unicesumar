@@ -1,0 +1,44 @@
+Algoritmo pessoas
+
+Var
+  idade, ncasado, ndivorciado, nsolteiro, nviuva: inteiro
+  estado: caractere
+
+Inicio
+
+    ncasado <- 0
+    nsolteiro <- 0
+    nviuva <- 0
+    ndivorciado <- 0
+
+      Repita
+      Escreva("Informe a idade da próxima pessoa, ou zero para encerrar: ")
+      Leia(idade)
+    Até_que (idade >= 0)
+    Enquanto (idade <> 0) faça:
+    Repita:
+      Escreva("Informe o estado civil: ")
+      Leia(estado)
+      Até_que ((estado = "C") ou (estado = "D") ou (estado = "S") ou estado = "V")
+      Se (estado = 'C') então:
+      ncasado <- ncasado + 1
+      Fim_se
+      Se (estado = "S") então:
+      nsolteiro <- nsolteiro + 1
+      Fim_se
+      Se (estado = "D") então:
+      ndivorciado <- ndivorciado + 1
+      Fim_se
+      Se (estado = "V") então:
+      nviuva <- nviuva + 1
+      Fim_se
+      Repita
+        Escreva("Informe a idade da próxima pessoa ou zero para encerrar: ")
+        Leia(idade)
+      Até_que(idade >= 0)
+    Fim_enquanto
+  Escreva("O número de casados é: ", ncasado)
+  Escreva("O número de solteiros é: ", nsolteiro)
+  Escreva("O número de separados é: ", ndivorciado)
+  Escreva("O número de viúvas é: ", nviuva)
+Fim

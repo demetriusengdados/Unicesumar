@@ -1,0 +1,30 @@
+Algoritmo Busca_sequencial
+
+Var
+
+  vnum: Vetor[1..20] de inteiro
+  num: inteiro
+  acha: logico
+
+Inicio
+    Para i de 1 até 20 passo 1 faça:
+      Escreva("Informe um número: ")
+      Leia(vnum[i])
+    Fim_para
+    Escreva("Informe o número que deseja buscar: ")
+    Leia(num)
+    i <- 1
+    acha <- falso
+    Enquanto (i <= 20) e (acha = falso) faça:
+      Se(num = vnum[i]) então:
+        acha <- verdadeiro
+      Senão
+        i <- i + 1
+      Fim_se
+    Fim_enquanto
+    Se (acha = verdadeiro) então:
+      Escreva("O elemento foi encontrado na posição", i)
+    Senão
+      Escreva("O elemento não foi encontrado")
+    Fim_se
+Fim

@@ -1,0 +1,48 @@
+Algoritmo atletas
+
+Var
+  idade, cont: inteiro
+  peso, altura, media, alto, pesado, soma: real
+  nome, nalto, npesado: Vetor[1..30] de caractere
+  sexo: caractere
+
+Inicio
+  media <- 0
+  cont <- 0
+  alto <- 0
+  pesado <- 0
+  nalto <- 0
+  npesado <- 0
+  Escreva("Informe o nome do atleta ou FIM para encerrar: ")
+  Leia(nome)
+  Enquanto (nome <> "FIM") faça:
+    Escreva("Informe a idade: ")
+    Leia(idade)
+    Escreva("Informe o peso: ")
+    Leia(peso)
+    Escreva("Informe a altura: ")
+    Leia(altura)
+    Escreva("Informe o sexo: ")
+    Leia(sexo)
+
+    soma <- soma + idade
+    cont <- cont + 1
+
+      Se (sexo = 'M') ou (sexo = "m") então:
+        Se (altura > alto) então
+        alto <- altura
+        nalto <- nome
+      Fim_se
+    Fim_se
+    Se (sexo = "F") ou (sexo = "f") então:
+      Se (peso > pesado) então:
+        pesado <- pesado
+        npesado <- nome
+      Fim_se
+    Fim_se
+    Escreva("Informe o nome do novo atleta ou FIM para encerrar: ")
+    Leia(nome)
+  Fim_enquanto
+  Escreva("O nome do atleta mais alto é: ", nalto)
+  Escreva("O nome da atleta mais pesada é: ", npesado)
+Fim

@@ -1,0 +1,17 @@
+Algoritmo conta
+
+Var
+
+  num qtdade: inteiro
+
+Inicio
+  qtdade <- 0
+  Escreva("Informe um número: ")
+  Leia(num)
+  Enquanto (num > 0) faça:
+    qtdade <- qtade + 1
+    Escreva("Informe um número: ")
+    Leia(num)
+  Fim_enquanto
+  Escreva("O total de números positivos informados é: ",qtdade)
+Fim

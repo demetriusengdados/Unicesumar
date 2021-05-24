@@ -1,0 +1,13 @@
+Algoritmo algoritmos
+
+Var
+
+  num, i: intiero
+
+Inicio
+  Escreva("Informe o número de vezes que deseja imprimir: ")
+  Leia(num)
+  Para i de 1 até num passo 1 faça:
+    Escreva("Algoritmos")
+  Fim_para
+Fim

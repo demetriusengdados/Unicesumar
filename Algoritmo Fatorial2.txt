@@ -1,0 +1,33 @@
+Algoritmo fatorial2
+
+Var
+   nprovas, cod, aprovados, reprovados,cont: inteiro
+   media, nota, soma: real
+
+Inicio
+  Escreva("Informe o número de notas da disciplina: ")
+  Leia(nprovas)
+  aprovados <- 0
+  reprovados <- 0
+  Escreva("Informe o código do aluno: ")
+  Leia(cod)
+  Enquanto (cod <> 0) faça:
+    soma <- 0
+    media <- 0
+    Para cont de 1 até nprovas passo 1 faça:
+      Escreva("Informe a nota: ")
+      Leia(nota)
+      soma <- soma + nota;
+    Fim_para
+    media <- soma / nprovas;
+    Se (media >= 7) então:
+      aprovados <- aprovados + 1
+    Senão
+      reprovados <- reprovados + 1
+    Fim_se
+    Escreva("Informe o código do aluno: ")
+    Leia(cod)
+  Fim_enquanto
+  Escreva("O númnero de aluno aprovados é: ", aprovados)
+  Escreva("O número de alunos reprovados é: ", reprovados)
+Fim

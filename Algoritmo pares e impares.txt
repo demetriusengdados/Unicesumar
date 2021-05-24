@@ -1,0 +1,22 @@
+Algortimo conta
+
+Var
+
+  num,npares, nimpares, i: inteiro
+
+Inicio
+
+  npares <- 0
+  nimpares <- 0
+  Para i de 1 até 100 passo 1 faça:
+    Escreva("Digite um número: ")
+    Leia(num)
+    Se (num MOD 2 = 0) então:
+      npares <- npares + 1
+    Senão
+      nimpares <- nimpares + 1
+    Fim_se
+  Fim_para
+  Escreva("A quantidade de números pares é: ",npares)
+  Escreva("A quantidade de números ímpares é: ", nimpares)
+Fim

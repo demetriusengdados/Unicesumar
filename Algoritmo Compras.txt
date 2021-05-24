@@ -1,0 +1,26 @@
+Algoritmo compras
+
+Var
+
+  pedido, qtdade: inteiro
+  preco, total: real
+  data: Vetor[1..10] de caractere
+
+Inicio
+  total <- 0
+  Escreva("Informe o npumero do pedido: ")
+  Leia(pedido)
+  Enquanto (pedido <> 0) faça:
+    Escreva("Informe a data: ")
+    Leia(data)
+    Escreva("Informe o preço unitário: ")
+    Leia(preco)
+    Escreva("Informe a quantidade: ")
+    Leia(qtdade)
+    total <- total +(preco * qtdade)
+    Escreva("O valor da compra é: ", preco * qtdade)
+    Escreva("Informe o número do novo pedido ou 0 para finalizar: ")
+    Leia(pedido)
+  Fim_enquanto
+  Escreva("O total da compra é: ", total)
+Fim

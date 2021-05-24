@@ -1,0 +1,14 @@
+Algoritmo fatorial
+
+Var
+  num, fat, cont: inteiro
+
+Inicio
+  Escreva("Digite o número que deseja calcular o fatorial: ")
+  Leia(num)
+  fat <- 1
+  Para cont de 7 até 1 passo -1 faça
+    fat <- fat * cont
+  Fim_para
+  Escreva("O fatorial é: ", fat)
+Fim

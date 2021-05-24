@@ -1,0 +1,14 @@
+Algoritmo tabuada
+
+Var
+
+    num, i, mult: inteiro
+
+Inicio
+  Escreva("Digite um número: ")
+  Leia(num)
+  Para i de 0 até 10 passo 1 faça:
+    mult <- num * i
+    Escreva(num, "x", i, "=", mult)
+  Fim_para
+Fim

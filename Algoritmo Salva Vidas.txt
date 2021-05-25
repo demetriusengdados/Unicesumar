@@ -1,0 +1,43 @@
+algoritmo "ATIVIDADE_ESTUDO"
+var
+   n: inteiro
+   R, area, m_area: real
+inicio
+
+      pi <- 3.1415
+      Escreva("informe a quantidade de áreas: ")
+      Leia(n)
+      
+      
+
+      Escreva("Digite o raio: ")
+      Leia(R)
+
+      area <- pi *(R * R)
+      
+      m_area <- area
+
+      repita
+
+            Escreva("Digite o raio: ")
+            Leia(R)
+            
+            area <- pi *(R * R)
+            
+            se(area < m_area) entao
+            m_area <- area
+            fimse
+            
+            n <- n - 1
+            
+      ate(n = 1)
+      
+      Escreval("A menor área é: ", m_area)
+
+
+
+
+
+fimalgoritmo
+
+

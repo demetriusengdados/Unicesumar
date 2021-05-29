@@ -1,0 +1,52 @@
+Algoritmo registroproduto
+
+Tipo
+      Cad_produto = produto
+      codigo:  inteiro
+      nome: Vetor[1..30] de caractere
+      preco: real
+      saldo: inteiro
+Fim_registro
+
+Var
+    produto: Vetor[1..10] de Cad_produto
+    i, codigo: inteiro
+    acha: lógico
+    resp: Vetor[1..3] de caractere
+
+Inicio
+
+    Para i de 1 até 20 faça:
+        Escreva("Informe o código do produto: ")
+        Leia(produto[i].codigo)
+        Escreva("Informe a descrição do produto: ")
+        Leia(produto[i].nome)
+        Escreva("Informe o preço do produto: ")
+        Leia(produto[i].preco)
+        Escreva("Informe o saldo em estoque do produto: ")
+        Leia(produto[i].saldo)
+    Fim_para
+    resp <- "sim"
+
+    Enquanto (resp <- "sim") faça:
+        Escreva("Informe o código a ser pesquisado: ")
+        Leia(codigo)
+        i <- 1
+        acha <- falso
+        Enquanto ( < = 20) e (acha = falso) faça:
+            Se (produto[i]).codigo = codigo) então:
+                acha <- verdadeiro
+            Senão
+                i <- i + 1
+            Fim_se
+        Fim_enquanto
+        Se (acha = verdadeiro) então:
+            Escreva("O preço é: ", produto[i].preco)
+            Escreva("O saldo em estoque é: "produto[i].saldo)
+        Senão
+            Escreva("Não há produtos com o código informado")
+        Fim_se
+        Escreva("Deseja continuar a pesquisa?")
+        Leia(resp)
+    Fim_enquanto
+Fim 

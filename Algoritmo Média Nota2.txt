@@ -1,0 +1,32 @@
+Algoritmo media_nota
+
+Var
+
+    media: Vetor[1..20] de real
+    notas: Vetor[1..20, 1..4] de real
+    somat, soma, mediat: real
+    i, j: inteiro
+
+  Inicio
+
+    somat <- 0
+    soma <- 0
+
+    Para i de 1 até 20 passo 1 faça:
+          Para j de 1 até 4 passo 1 faça:
+              Escreva("Informe a nota: ", j, "do aluno" i)
+              Leia(notas[i,j])
+              soma <- soma + notas[i,j]
+          Fim_para
+        media[i] <- soma/4
+        somat <- somat + soma
+        soma <- 0
+    Fim_para
+    mediat <- somat/20
+
+    Para i de 1 até 20 passo 1 faça:
+          Escreva("A média do aluno", i "é: ", media[i])
+    Fim_para
+    Escreva("A média da turma é: ", mediat)
+
+Fim

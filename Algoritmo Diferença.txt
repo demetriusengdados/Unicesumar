@@ -1,0 +1,27 @@
+Algoritmo diferenca
+
+Var
+
+    A, B, C: Vetor[1..5, 1..5] de inteiro
+    i, j: inteiro
+
+Inicio
+    Para i de 1 até 5 passo 1 faça:
+        Para j de 1 até 5 passo 1 faça:
+            Escreva("Informe o elemento", i, j, "da matriz A")
+            Leia(A[i,j])
+        Fim_para
+    Fim_para
+    Para i de 1 até 5 passo 1 faça:
+        Para j de 1 até 5 passo 1 faça
+            Escreva("Informe o elemento", i,j, "da matriz B")
+            Leia(B[i,j])
+            C[i,j] <- A[i,j] - B[i,j]
+        Fim_para
+    Fim_para
+    Para i de 1 até 5 passo 1 faça:
+        Para j de 1 até 5 passo 1 faça
+            Escreva(C[i,j])
+        Fim_para
+    Fim_para
+Fim 

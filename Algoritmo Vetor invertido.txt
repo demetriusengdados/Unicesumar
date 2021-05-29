@@ -1,0 +1,16 @@
+Algoritmo Vetor invertido
+
+Var
+    num: Vetor[1..30] de inteiro
+    i, j: inteiro
+
+Inicio
+    Para i de 1 até 30 passo 1 faça:
+        Escreva("Informe um número: ")
+        Leia(num[i])
+    Fim_para
+    Para i de 30 até 1 passo -1 faça:
+        Escreva(num[i])
+    Fim_para
+
+Fim 

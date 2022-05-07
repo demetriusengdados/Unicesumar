@@ -22,3 +22,17 @@ void empilha(int elemento){
 		pilha.topo++;
 	}
 }
+
+int desempilha(){
+	int elemento;
+	if(pilha.topo == pilha.ini){
+		printf("A pilha está vazia \n");
+		system("pause");
+	}
+	else
+	{
+		pilha.topo--;
+		elemento = pilha.dados[pilha.topo];
+		return elemento;
+	}
+}

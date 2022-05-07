@@ -10,3 +10,15 @@ struct tipo_pilha{
 };
 
 struct tipo_pilha pilha;
+
+void empilha(int elemento){
+	if(pilha.topo == tamanho){
+		printf("Fila cheia. \n");
+		system("pause");
+	}
+	else
+	{
+		pilha.dados[pilha.topo] = elemento;
+		pilha.topo++;
+	}
+}
